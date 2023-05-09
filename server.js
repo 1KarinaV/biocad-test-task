@@ -9,7 +9,7 @@ application.listen(3000, () => {
 application.use(express.static(path.join(__dirname, 'public')));
 
 application.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/main.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 application.get('/analytics.html', (req, res) => {
@@ -22,7 +22,7 @@ application.get('/analytics.html', (req, res) => {
 application.get('/main.html',(req, res) => {
 
     application.use(express.static(path.join(__dirname, 'public')));
-    res.sendFile(__dirname + '/public/main.html');
+    res.sendFile(__dirname + '/public/index.html');
 
 });
 
