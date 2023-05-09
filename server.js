@@ -19,10 +19,10 @@ application.get('/analytics.html', (req, res) => {
 
 });
 
-application.get('/main.html',(req, res) => {
+application.get('/index.html',(req, res) => {
 
-    application.use(express.static(path.join(__dirname, 'public')));
-    res.sendFile(__dirname + '/public/index.html');
+    application.use(express.static(path.join("/Users/karinavladykina/WebstormProjects/biocad-test-task/index.html")));
+    res.sendFile("/Users/karinavladykina/WebstormProjects/biocad-test-task/index.html");
 
 });
 
